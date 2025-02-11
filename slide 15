@@ -1,0 +1,16 @@
+package OOP;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class Processor {
+    public static void main(String[] args) {
+        ArrayList<Car> Cars = new ArrayList<>();
+        Cars.add(new Car("Lamborghini",2020));
+        Cars.add(new Car("Honda",2021));
+        Cars.add(new Car("Toyota",2019));
+        Cars.add(new Car("BMW",2022));
+        System.out.println("Danh sach cac xe: ");
+        for(Car car : Cars){
+            car.displayDetails();
+        }
+    }
+}
